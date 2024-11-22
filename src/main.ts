@@ -8,7 +8,10 @@ async function bootstrap() {
   app.useGlobalPipes(new ValidationPipe());
 
   // cors middleware
-  app.enableCors();
+  app.enableCors({
+    origin: '*',
+    credentials: true,
+  });
 
   // load desired port from config
   const configService: ConfigService = app.get(ConfigService);

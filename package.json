@@ -20,19 +20,30 @@
     "test:e2e": "jest --config ./test/jest-e2e.json"
   },
   "dependencies": {
+    "@apollo/server": "^4.11.2",
+    "@nestjs-modules/mailer": "^2.0.2",
+    "@nestjs/apollo": "^12.2.1",
     "@nestjs/common": "^10.0.0",
     "@nestjs/config": "^3.3.0",
     "@nestjs/core": "^10.0.0",
     "@nestjs/graphql": "^12.2.1",
+    "@nestjs/jwt": "^10.2.0",
+    "@nestjs/mongoose": "^10.1.0",
     "@nestjs/platform-express": "^10.0.0",
-    "class-transformer": "^0.1.0-beta.10",
+    "class-transformer": "^0.1.10",
     "class-validator": "^0.14.1",
+    "class-validator-mongo-object-id": "^1.4.0",
     "cross-env": "^7.0.3",
     "graphql": "^16.9.0",
+    "handlebars": "^4.7.8",
     "joi": "^17.13.3",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.8.2",
     "nodemon": "^3.1.7",
+    "preview-email": "^3.1.0",
     "reflect-metadata": "^0.2.0",
-    "rxjs": "^7.8.1"
+    "rxjs": "^7.8.1",
+    "ua-parser-js": "^2.0.0"
   },
   "devDependencies": {
     "@nestjs/cli": "^10.0.0",
