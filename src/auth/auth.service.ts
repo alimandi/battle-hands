@@ -70,8 +70,6 @@ export class AuthService {
         date: new Date(),
       });
 
-      console.log('dsklndsflkn');
-
       const token = this.jwtService.sign(user.id);
 
       const decodedToken = jwt.decode(token.token) as { exp: number };
@@ -79,7 +77,6 @@ export class AuthService {
       const decodedRefreshToken = jwt.decode(token.refreshToken) as {
         exp: number;
       };
-      console.log('dsklndsflkn');
 
       const expirationToken = new Date(decodedToken.exp * 1000);
 

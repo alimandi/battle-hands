@@ -46,9 +46,6 @@ export class JwtService {
   }
 
   sign(userId: string): JwtToken {
-    console.log(this.options.privateKey);
-    console.log(this.options.tokenExpiration);
-
     return {
       token: jwt.sign({ jti: userId }, this.options.privateKey, {
         expiresIn: `${this.options.tokenExpiration}d`,
